@@ -14,7 +14,8 @@ nav a {
 }
 #hero-img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -53,6 +54,11 @@ header {
 }
 #background {
     background-color: #7692ff;
+}
+.mountains {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 .msg {
     background-color: #7692ff;
