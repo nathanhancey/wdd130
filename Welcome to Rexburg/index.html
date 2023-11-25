@@ -23,18 +23,22 @@
             height: 100%;
             object-fit: cover; /* This property will crop the image while maintaining its aspect ratio */
         }
+        #pageheader {
+            background-color: #173543;
+        }
     </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
 <head>
 
 </head>
 <body>
     <div id="content"></div>
     <div>
-        <header>
+        <header id="pageheader">
             <a id="logo_link" href="index.html">
                 <img class="logo" src="Images/Welcome_to_Rexburg_logo.jpeg" alt="Welcome_to_Rexburg_logo" width="300" height="300">
-                
             </a>
+            <h1>Welcome to Rexburg</h1>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="places of interest.html">Places of Interest</a>
@@ -48,7 +52,7 @@
             </section>
         </div>
         <main class="info">
-            <section class="history">
+            <section class="history box-container">
                 <header>
                     History of Rexburg:
                 </header>
@@ -60,7 +64,7 @@
                     atteding each semester.
                 </p>
             </section>
-            <section class="explore">
+            <section class="explore box-container">
                 <header>
                     Explore Rexburg:
                 </header>
@@ -74,7 +78,7 @@
             </section>
         </main>
         <footer>
-            <p>Dry Oar &copy; 2023 - Nathan Hancey</p>
+            <p>Welcome to Rexburg &copy; 2023 - Nathan Hancey</p>
             <p><a href="personal_site_plan.html">Site Plan</a></p>
             <p>Wireframe:</p>
             <img class="wireframe" src="Images/IMG_2601[1].jpg" alt="wireframe" width="300">
