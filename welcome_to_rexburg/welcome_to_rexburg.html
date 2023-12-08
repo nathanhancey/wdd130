@@ -18,20 +18,57 @@
             overflow: hidden;
             padding-bottom: 20px;
         }
-
         #hero-img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* This property will crop the image while maintaining its aspect ratio */
+            object-fit: cover;
         }
         #pageheader {
             background-color: #173543;
         }
+        body {
+        font-family: "Lato", sans-serif;
+        }
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #173543;
+            border-right: 10px solid white;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute links equally across the height */
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            flex: 1;
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav a:hover {
+            color: white;
+            text-decoration: underline;
+            font-family: "Lato", sans-serif;
+        }
+        
     </style>
     <link rel="stylesheet" type="text/css" href="welcome_to_rexburg.css">
-<head>
-
-</head>
+<div class="sidenav">
+        <a href="welcome_to_rexburg.html">Home</a>
+        <a href="places_of_interest.html">Places of Interest</a>
+        <a href="shops_and_restaurants.html">Shops and Restaurants</a>
+</div>
 <body>
     <div id="content"></div>
     <div>
@@ -82,7 +119,6 @@
             <p>Welcome to Rexburg &copy; 2023 - Nathan Hancey</p>
             <p><a href="personal_site_plan.html">Site Plan</a></p>
             <p>Wireframe:</p>
-            <img class="wireframe" src="Images/IMG_2601[1].jpg" alt="wireframe" width="300">
         </footer>
     </div>
 </body>
